@@ -79,3 +79,34 @@ body {
     z-index: 10;
 }
 
+h2 {
+    margin-top: 40px;
+}
+h2::after {
+    content: url(images/line.png);
+    margin-left: 10px;
+}
+h3 {
+    font-size: 27px;
+}
+
+#mission {
+    margin(80 auto)
+}
+#mission-flex {
+    display: flex;
+}
+
+#mission-flex > div {
+    width: 50%;
+    margin: 20px;
+}
+
+#mission-photo {
+    width: 100%;
+}
+
+#s2dgs {
+    margin-top: 50px;
+    width: 100%;
+}
