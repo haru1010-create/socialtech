@@ -6,7 +6,8 @@
     <meta name="description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-<body>
+</head>
+    <body>
     <!-- ヘッダー -->
      <header>
     <!-- ロゴ -->
@@ -25,8 +26,43 @@
             <li><a href="index.html#contact">CONTACT</a></li>   
         </ul>
      </nav>
-     </header>
-</body>
+     <!-- スマホ用メニューボタン -->
+      <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block';">
+        <img src="images/button-menu.png" alt="ナビゲーションを開く">
+      </button>
+     <!-- スマホ用ナビゲーション -->
+      <div id="nav-sp">
+        <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+            <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+        </button>
+
+        <nav>
+            <ul>
+                <li>
+                    <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"> </a>
+                </li>
+                <li><a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a></li>
+                <li><a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a></li>
+                <li><a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUTUS</a></li>
+                <li><a class="menu" href="index.html#vision" onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a></li>
+                <li><a class="menu" href="index.html#company" onclick="document.getElementById('nav-sp').style.display = 'none'">COMPANY</a></li>
+                <li><a class="menu" href="index.html#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="sns">
+            <a href="https://www.facebook.com/sejuku2013">
+                <img src="images/button-facebook.png" alt="Facebookのリンク">
+            </a>
+            <a href="https://twitter.com/samuraijuku">
+                <img src="images/button-twitter.png" alt="Twitterのリンク">
+            </a>
+            <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g">
+                <img src="images/button-youtube.png" alt="Youtubeのリンク">
+            </a>
+        </div>
+      </div>
+    </header>
+    </body>
     <main>
         <article>
             <!-- メインビジュアル -->
@@ -228,7 +264,7 @@
                             <td class="cell">2015年3月19日</td>
                         </tr>
                     </table>
-                    <iframe src="http://127.0.0.1:5500/mission.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0686781169775!2d139.77207231065697!3d35.69992752883343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188fee13660e23%3A0x77137876edf742ac!2z5L2P5Y-L5LiN5YuV55Sj56eL6JGJ5Y6f6aeF5YmN44OT44Or!5e0!3m2!1sja!2sjp!4v1745049707506!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         <!-- お問い合わせフォーム -->
         <section id="contact">
@@ -338,5 +374,25 @@
         </section>
         </article>
     </main>
-</head>
+        <footer>
+            <div id="footer-logo">
+                <img src="images/logo-sp.png" alt="SocilTech">
+            </div>
+            <div id="footer-link">
+                <a href="mission.html">MISSION</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="index.html#aboutus">ABOUTUS</a>
+                <a href="index.html#vision">VISION</a>
+                <a href="index.html#company">COMPANY</a>
+                <a href="index.html#CONTACT">CONTACT</a>
+            </div>
+            <div id="sns-footer">
+                <div class="sns-btns">
+                    <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
+                    <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="Twitterのリンク"></a>
+                    <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="Youtubeのリンク"></a>
+                </div>
+                <p id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved.</p>
+            </div>
+        </footer>
 </html>
