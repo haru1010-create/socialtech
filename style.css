@@ -7,16 +7,16 @@ p {
     font-size: 15px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-
-}
-
 body {
     max-width: 1080px;
     margin: 0 auto;
     font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 #nav-pc {
@@ -42,6 +42,12 @@ body {
     text-decoration: underline;
 }
 
+/* スマホ用ナビを非表示 */
+#nav-sp,
+#menu-sp {
+    display: none;
+}
+
 /* メインビジュアル */
 #main-visual {
     position: relative;
@@ -61,7 +67,7 @@ body {
     z-index: 11;
 }
 
-#main-message > h1 {
+#main-message h1 {
     font-size: 60px;
     margin: 100px 0 0 50px;
 
@@ -95,7 +101,7 @@ h3 {
 }
 
 #mission {
-    margin: 80 auto;
+    margin: 80px auto;
 }
 
 #mission-flex {
@@ -261,7 +267,7 @@ h3 {
     top: 0;
     left: 0;
     z-index: 31;
-    margin: 20px;
+    margin-right: 20px;
 }
 
 .vision-box > div > h4 {
@@ -494,7 +500,7 @@ footer {
     padding: 20px;
 }
 
-#mssion-five-goals .five-goals-image img {
+#mission-five-goals .five-goals-image img {
     width: 100%;
 }
 
@@ -535,7 +541,7 @@ footer {
 
 /* PC用プロダクトページ */
 .product-main-inner {
-    background-image: url(images/product/product-main.png);
+    background-image: url("images/product/product-main.png");
     background-repeat: no-repeat;
     background-position-y: center;
 }
@@ -625,7 +631,6 @@ footer {
 #nav-pc {
     display: none;
     }
-}
 
 #menu-sp {
     display: block;
@@ -721,7 +726,7 @@ footer {
 }
 
 h2 {
-    font-size: 15px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
 h3 {
@@ -775,7 +780,7 @@ h3 {
     font-size: 24px;
 }
 
-#product-,more {
+#product-more {
     text-align: left;
 }
 
@@ -970,13 +975,7 @@ footer {
     padding: 0;
 }
 
-#mision-fve-goals .five-goals-image,
-#mission-five-goals .five-goals-read {
-    width: 100%;
-    padding: 0;
-}
-
-#mision-five-goals .five-goals-read > div {
+#mission-five-goals .five-goals-read > div {
     display: flex;
     flex-direction: column;
 }
@@ -1049,23 +1048,4 @@ fivegoals-image-right,
     order: 2;
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
